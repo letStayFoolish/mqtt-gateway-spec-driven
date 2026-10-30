@@ -1,6 +1,7 @@
-# MG-009 — Restoration barrier gating readiness
+# 09 — Restoration barrier gating readiness
 
-Depends on: MG-008
+Status: ready-for-agent
+Depends on: 08
 
 ## Goal
 

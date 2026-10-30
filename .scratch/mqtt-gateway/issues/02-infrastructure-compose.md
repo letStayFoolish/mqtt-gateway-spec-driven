@@ -1,11 +1,12 @@
-# MG-002 — Infrastructure compose: EMQX, MariaDB, Redis, telemetry
+# 02 — Infrastructure compose: EMQX, MariaDB, Redis, telemetry
 
-Depends on: MG-001
+Status: ready-for-agent
+Depends on: 01
 
 ## Goal
 
 `docker compose up -d` brings up a healthy broker, database, Redis, and telemetry dashboard. The
-application is not containerised yet (MG-018).
+application is not containerised yet (18).
 
 ## Scope
 

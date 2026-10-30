@@ -1,6 +1,7 @@
-# MG-011 — `GET /api/messages` with keyset paging
+# 11 — `GET /api/messages` with keyset paging
 
-Depends on: MG-010
+Status: ready-for-agent
+Depends on: 10
 
 ## Goal
 

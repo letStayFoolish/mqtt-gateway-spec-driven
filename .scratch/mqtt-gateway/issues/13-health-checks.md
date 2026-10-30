@@ -1,6 +1,7 @@
-# MG-013 — `/health/live` and `/health/ready`
+# 13 — `/health/live` and `/health/ready`
 
-Depends on: MG-009, MG-012
+Status: ready-for-agent
+Depends on: 09, 12
 
 ## Goal
 
@@ -28,4 +29,4 @@ Two endpoints with genuinely different meanings, each of which an orchestrator c
 
 ## Gaps closed
 
-GAP-20 (no health, readiness, or metrics), and the silent-failure mode from MG-009.
+GAP-20 (no health, readiness, or metrics), and the silent-failure mode from 09.

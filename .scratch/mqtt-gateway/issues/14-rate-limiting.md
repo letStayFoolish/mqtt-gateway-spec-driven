@@ -1,6 +1,7 @@
-# MG-014 — Token-bucket limiter on publish
+# 14 — Token-bucket limiter on publish
 
-Depends on: MG-006
+Status: ready-for-agent
+Depends on: 06
 
 ## Goal
 

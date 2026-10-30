@@ -1,6 +1,7 @@
-# MG-005 — MQTT connection lifecycle, reconnect, LWT, `/api/connection`
+# 05 — MQTT connection lifecycle, reconnect, LWT, `/api/connection`
 
-Depends on: MG-003, MG-004
+Status: ready-for-agent
+Depends on: 03, 04
 
 ## Goal
 

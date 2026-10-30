@@ -1,6 +1,7 @@
-# MG-015 — OpenTelemetry traces, metrics, dashboard
+# 15 — OpenTelemetry traces, metrics, dashboard
 
-Depends on: MG-010, MG-012
+Status: ready-for-agent
+Depends on: 10, 12
 
 ## Goal
 
@@ -9,7 +10,7 @@ When the service misbehaves, the cause is visible without attaching a debugger.
 ## Scope
 
 - OpenTelemetry tracing and metrics exported over OTLP to the Aspire Dashboard container from
-  MG-002. Instrumentation for ASP.NET Core, HttpClient, EF Core, and StackExchange.Redis.
+  02. Instrumentation for ASP.NET Core, HttpClient, EF Core, and StackExchange.Redis.
 - Custom spans so one message is traceable end to end: `POST /api/publish` → broker → ingest
   handler → channel → batch insert → Redis increment.
 - Custom metrics:

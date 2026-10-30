@@ -1,6 +1,7 @@
-# MG-008 — Subscriptions CRUD with database-enforced uniqueness
+# 08 — Subscriptions CRUD with database-enforced uniqueness
 
-Depends on: MG-005, MG-007
+Status: ready-for-agent
+Depends on: 05, 07
 
 ## Goal
 

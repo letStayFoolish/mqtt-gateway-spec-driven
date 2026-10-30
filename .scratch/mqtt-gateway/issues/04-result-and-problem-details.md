@@ -1,6 +1,7 @@
-# MG-004 — `Result<T>`, ProblemDetails, validation filter
+# 04 — `Result<T>`, ProblemDetails, validation filter
 
-Depends on: MG-003
+Status: ready-for-agent
+Depends on: 03
 
 ## Goal
 

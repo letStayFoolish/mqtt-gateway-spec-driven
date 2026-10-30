@@ -1,6 +1,7 @@
-# MG-017 — Integration suite: all nine scenarios
+# 17 — Integration suite: all nine scenarios
 
-Depends on: MG-013
+Status: ready-for-agent
+Depends on: 13
 
 ## Goal
 

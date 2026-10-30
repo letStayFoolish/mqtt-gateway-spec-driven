@@ -1,6 +1,7 @@
-# MG-016 — Configurable message retention
+# 16 — Configurable message retention
 
-Depends on: MG-011
+Status: ready-for-agent
+Depends on: 11
 
 ## Goal
 

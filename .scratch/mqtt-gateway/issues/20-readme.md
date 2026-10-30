@@ -1,6 +1,7 @@
-# MG-020 — README and known limitations
+# 20 — README and known limitations
 
-Depends on: MG-018
+Status: ready-for-agent
+Depends on: 18
 
 ## Goal
 
@@ -14,7 +15,7 @@ Someone who is not the author can run, understand, and operate this project.
 - Every environment variable, what it does, and its default.
 - How migrations are applied, and what to do when they fail.
 - How to run the tests, including the Docker requirement for Testcontainers.
-- Links to [`spec.md`](docs/spec.md), [`spec-gaps.md`](docs/spec-gaps.md), and [`decisions/`](docs/decisions/).
+- Links to [`spec.md`](../spec.md), [`spec-gaps.md`](../spec-gaps.md), and the [ADRs](../../../docs/adr/).
 - **Known limitations**, stated plainly rather than discovered later:
   - One instance per `ClientId`; horizontal scaling needs shared subscriptions (ADR-0005)
   - Database and Redis can disagree after a partial failure; there is no distributed transaction

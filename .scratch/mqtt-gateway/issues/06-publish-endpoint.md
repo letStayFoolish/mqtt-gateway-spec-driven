@@ -1,6 +1,7 @@
-# MG-006 — `POST /api/publish` and topic-name validation
+# 06 — `POST /api/publish` and topic-name validation
 
-Depends on: MG-004, MG-005
+Status: ready-for-agent
+Depends on: 04, 05
 
 ## Goal
 

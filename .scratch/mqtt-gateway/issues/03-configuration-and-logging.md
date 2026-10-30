@@ -1,6 +1,7 @@
-# MG-003 — Typed configuration, Serilog, startup validation
+# 03 — Typed configuration, Serilog, startup validation
 
-Depends on: MG-001
+Status: ready-for-agent
+Depends on: 01
 
 ## Goal
 
@@ -16,7 +17,7 @@ on invalid configuration.
   a service.
 - Serilog from configuration: console in Development, structured JSON elsewhere, plus a rolling
   file sink. Request logging registered first in the pipeline.
-- Trivial `/health/live` and `/health/ready` so the shape exists from the start (MG-013 gives them
+- Trivial `/health/live` and `/health/ready` so the shape exists from the start (13 gives them
   meaning).
 - Local secrets via `dotnet user-secrets`; `appsettings.json` contains no credentials.
 

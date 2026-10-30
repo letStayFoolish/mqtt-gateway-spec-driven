@@ -1,5 +1,6 @@
-# MG-001 — Repository skeleton, solution, central packages, CI
+# 01 — Repository skeleton, solution, central packages, CI
 
+Status: ready-for-agent
 Depends on: —
 
 ## Goal

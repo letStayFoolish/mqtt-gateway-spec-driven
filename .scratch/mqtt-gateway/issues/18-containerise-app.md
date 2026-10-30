@@ -1,6 +1,7 @@
-# MG-018 — Dockerfile and application in compose
+# 18 — Dockerfile and application in compose
 
-Depends on: MG-013
+Status: ready-for-agent
+Depends on: 13
 
 ## Goal
 

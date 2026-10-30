@@ -1,6 +1,7 @@
-# MG-012 — Rolling-window statistics in Redis
+# 12 — Rolling-window statistics in Redis
 
-Depends on: MG-010
+Status: ready-for-agent
+Depends on: 10
 
 ## Goal
 
@@ -8,7 +9,7 @@ Statistics that mean what they claim, and that never take the service down.
 
 ## Scope
 
-- Per the design in [ADR-0004](../decisions/0004-redis-rolling-window.md):
+- Per the design in [ADR-0004](../../../docs/adr/0004-redis-rolling-window.md):
   - `stats:{topic}:{yyyyMMddHHmm}`, TTL 70 minutes
   - `INCR` and `EXPIRE` in one pipelined transaction; `EXPIRE` only when `INCR` returns 1
   - active concrete topics tracked in the `stats:topics` set

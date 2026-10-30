@@ -1,6 +1,7 @@
-# MG-019 — OpenAPI document, Scalar UI, `.http` file
+# 19 — OpenAPI document, Scalar UI, `.http` file
 
-Depends on: MG-013
+Status: ready-for-agent
+Depends on: 13
 
 ## Goal
 

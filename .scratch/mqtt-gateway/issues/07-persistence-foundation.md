@@ -1,6 +1,7 @@
-# MG-007 — `GatewayDbContext`, entities, migrations, migrator
+# 07 — `GatewayDbContext`, entities, migrations, migrator
 
-Depends on: MG-003
+Status: ready-for-agent
+Depends on: 03
 
 ## Goal
 

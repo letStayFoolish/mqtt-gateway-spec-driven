@@ -9,8 +9,8 @@ Related documents:
 
 - [`spec-gaps.md`](spec-gaps.md) — every requirement inherited from the original internship
   assignment that was broken, underspecified, or missing, and what this specification does about it.
-- [`decisions/`](decisions/) — architecture decision records for choices that were not obvious.
-- [`tickets/`](tickets/) — the work, broken into independently deliverable units.
+- [`ADRs`](../../docs/adr/) — architecture decision records for choices that were not obvious.
+- [`issues/`](issues/) — the work, broken into independently deliverable units.
 
 ---
 
@@ -90,10 +90,10 @@ Three ecosystem traps this stack deliberately avoids — all three are live as o
 three silently produce a broken project:
 
 1. **`Pomelo.EntityFrameworkCore.MySql` is unmaintained** and caps EF Core at 9.x, with no
-   deprecation banner on NuGet. See [ADR-0001](decisions/0001-ef-core-provider.md).
+   deprecation banner on NuGet. See [ADR-0001](../../docs/adr/0001-ef-core-provider.md).
 2. **`xunit` v2 is deprecated**, and `xunit.v3` 4.x fails under `dotnet test` on the .NET 10 SDK
    unless the Microsoft.Testing.Platform runner is selected in `global.json`.
-   See [ADR-0006](decisions/0006-test-platform.md).
+   See [ADR-0006](../../docs/adr/0006-test-platform.md).
 3. **`FluentValidation.AspNetCore` is deprecated** and never supported anything but MVC
    auto-validation. Validation is wired through an explicit action filter instead.
 
@@ -101,7 +101,7 @@ three silently produce a broken project:
 
 One project, organised by feature. Not Clean Architecture: this service has no domain logic worth
 isolating from infrastructure — it *is* infrastructure. Layers here would buy nothing and cost
-indirection. See [ADR-0002](decisions/0002-architecture.md).
+indirection. See [ADR-0002](../../docs/adr/0002-architecture.md).
 
 ```
 src/MqttGateway.Api/
@@ -230,7 +230,7 @@ reconnect. A gateway that loses everything published during a restart is not a g
 
 The cost is explicit: **one running instance per `ClientId`.** A second process using the same
 `ClientId` causes a session takeover and the two will evict each other indefinitely if both
-reconnect. This is tested, not assumed. See [ADR-0005](decisions/0005-mqtt-session.md).
+reconnect. This is tested, not assumed. See [ADR-0005](../../docs/adr/0005-mqtt-session.md).
 
 ### 6.2 Connection lifecycle
 
@@ -308,7 +308,7 @@ fails, the message is gone and the broker believes it was delivered.
 The trade this buys, stated plainly: **a slow database now slows ingestion instead of losing
 messages.** Channel depth is exported as a metric so the condition is visible rather than inferred.
 
-See [ADR-0003](decisions/0003-ingest-pipeline.md).
+See [ADR-0003](../../docs/adr/0003-ingest-pipeline.md).
 
 ## 8. HTTP API
 
@@ -404,7 +404,7 @@ A true **rolling 1-hour window**, not a sliding expiry.
 
 `INCR` + `EXPIRE` on every message — the obvious implementation — does not produce a rolling
 window. It pushes expiry forward on every increment, so the counter means "everything since the
-first message, until an hour of silence". See [ADR-0004](decisions/0004-redis-rolling-window.md).
+first message, until an hour of silence". See [ADR-0004](../../docs/adr/0004-redis-rolling-window.md).
 
 **Redis is derived state.** If Redis is unavailable: ingest continues, `/api/messages` works,
 `/api/stats` responds `200` with `"degraded": true` and zeroed counters, and `/health/ready`

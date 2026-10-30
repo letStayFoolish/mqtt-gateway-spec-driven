@@ -1,10 +1,11 @@
-# MG-010 — Channel-based ingest with backpressure
+# 10 — Channel-based ingest with backpressure
 
-Depends on: MG-007, MG-009
+Status: ready-for-agent
+Depends on: 07, 09
 
 ## Goal
 
-Every received message is persisted exactly as described in [ADR-0003](../decisions/0003-ingest-pipeline.md),
+Every received message is persisted exactly as described in [ADR-0003](../../../docs/adr/0003-ingest-pipeline.md),
 without the receive handler ever touching the database.
 
 ## Scope
